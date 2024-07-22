@@ -1,0 +1,47 @@
+application {
+  config {
+    baseName FIM,
+    applicationType microservice,
+    packageName com.scb.fimob,
+    authenticationType jwt,
+    prodDatabaseType mssql,    
+     buildTool maven
+  }
+  entities *
+}
+entity FimAccounts{
+  AccountId String
+  CustId String maxlength(30) required
+  RelnId String maxlength(30) required
+  RelnType String maxlength(5) required
+  OperInst String maxlength(10) 
+  IsAcctNbr String maxlength(30) required
+  BndAcctNbr String maxlength(30) required
+  ClosingId String maxlength(10)
+  SubSegment String maxlength(10)
+  BranchCode String maxlength(10)
+  AcctStatus String maxlength(10) required
+  CtryCode String maxlength(3)
+  AcctOwners String maxlength(100)
+  Remarks String maxlength(200)
+  CreatedBy String maxlength(8)
+  CreatedTs Instant
+  UpdatedBy String maxlength(8)
+  UpdatedTs Instant
+  RecordStatus String maxlength(10)
+}
+
+entity PersonalDetails{
+  FullName String required
+  DateOfBirth Instant
+  CreatedAt Instant
+  UpdatedAt Instant
+}
+
+
+
+service * with serviceClass
+dto all with mapstruct
+
+paginate FimCust,FimSettAcct with pagination
+    
