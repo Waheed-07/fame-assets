@@ -1,0 +1,32 @@
+
+application {
+  config {
+    baseName com
+    applicationType monolith
+    packageName com.simplerishta.cms
+    authenticationType jwt
+    prodDatabaseType postgresql
+    clientFramework angularX
+  }
+  entities *
+}
+
+entity VerifiableAttributes{
+  name String maxlength(200) required
+  createdBy String maxlength(30) required
+  createdAt Instant required
+  updatedAt Instant
+}
+entity UserVerificationAttributes{
+ documentType String
+ documentUrl String
+ status String
+ verificationToken String
+ lastActionDate Instant
+ createdAt Instant required
+ updatedAt Instant
+}
+
+relationship OneToMany {
+  A to B
+}
