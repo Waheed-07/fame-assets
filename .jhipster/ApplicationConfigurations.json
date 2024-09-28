@@ -1,0 +1,40 @@
+{
+  "annotations": {
+    "changelogDate": "20240928163006"
+  },
+  "applications": ["SimpleRishta"],
+  "clientRootFolder": "SimpleRishta",
+  "databaseType": "sql",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "configKey",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength", "required"],
+      "fieldValidateRulesMaxlength": "300"
+    },
+    {
+      "fieldName": "configValue",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength", "required"],
+      "fieldValidateRulesMaxlength": "500"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength"],
+      "fieldValidateRulesMaxlength": "500"
+    },
+    {
+      "fieldName": "countryCode",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength"],
+      "fieldValidateRulesMaxlength": "3"
+    }
+  ],
+  "microserviceName": "SimpleRishta",
+  "name": "ApplicationConfigurations",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

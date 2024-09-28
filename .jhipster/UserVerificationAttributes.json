@@ -1,0 +1,45 @@
+{
+  "annotations": {
+    "changelogDate": "20240928162906"
+  },
+  "applications": ["SimpleRishta"],
+  "clientRootFolder": "SimpleRishta",
+  "databaseType": "sql",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "documentType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "documentUrl",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "verificationToken",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "lastActionDate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "createdAt",
+      "fieldType": "Instant",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "updatedAt",
+      "fieldType": "Instant"
+    }
+  ],
+  "microserviceName": "SimpleRishta",
+  "name": "UserVerificationAttributes",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}
