@@ -1,0 +1,31 @@
+
+application {
+  config {
+    baseName SimpleRishta,
+    applicationType microservice,
+    packageName com.simplerishta.cms,
+    authenticationType jwt,
+    prodDatabaseType postgresql,    
+     buildTool maven
+  }
+  entities *
+}
+
+entity VerifiableAttributes{
+  name String maxlength(200) required
+  createdBy String maxlength(30) required
+  createdAt Instant required
+  updatedAt Instant
+}
+entity UserVerificationAttributes{
+ documentType String
+ documentUrl String
+ status String
+ verificationToken String
+ lastActionDate Instant
+ createdAt Instant required
+ updatedAt Instant
+}
+
+service * with serviceClass
+dto all with mapstruct
