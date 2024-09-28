@@ -1,0 +1,18 @@
+{
+  "generator-jhipster": {
+    "applicationType": "microservice",
+    "authenticationType": "jwt",
+    "baseName": "SimpleRishta",
+    "buildTool": "maven",
+    "entities": ["VerifiableAttributes", "UserVerificationAttributes"],
+    "jhipsterVersion": "8.7.1",
+    "jwtSecretKey": "N2NkODg2OTQwNTdkODJmN2Y0ZDNhYmJhZjg3MWYwMzJkYjUxODg3NWEyNGRhY2U5OGY3MjdiZGE2NGVlZTdiOGQ4N2U4N2RlM2RjODMzZDAxZTcyOGUzZTNkNDFjYThhNDkzZGEwNmQ0Zjk5ZDE1OTQ2ZGUwMTNiNjIzNGE5Njg=",
+    "languages": ["en"],
+    "lastLiquibaseTimestamp": 1727537017000,
+    "nativeLanguage": "en",
+    "packageName": "com.simplerishta.cms",
+    "prodDatabaseType": "postgresql",
+    "skipClient": true,
+    "skipUserManagement": true
+  }
+}
